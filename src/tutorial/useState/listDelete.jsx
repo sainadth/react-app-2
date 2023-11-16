@@ -22,11 +22,16 @@ const ListElement = (props) => {
 const items = ["Cricket", "Badminton", "Soccer"];
 // list.splice()
 
-const ListDelete = () => {
+const ListDelete = (props) => {
   var [list, setList] = useState(items);
   console.log(useState(list));
   const handleDeleteAllEvent = () => {
     setList([]);
+  };
+  const handleResetEvent = () => {
+    console.log("props", props);
+    console.log(list);
+    setList(items);
   };
   return (
     <div style={{ textAlign: "center" }}>
@@ -42,7 +47,11 @@ const ListDelete = () => {
           );
         })}
       </div>
-      <button onClick={handleDeleteAllEvent}>Delete All</button>
+      {list.length ? (
+        <button onClick={handleDeleteAllEvent}>Delete All</button>
+      ) : (
+        <button onClick={handleResetEvent}>Reset</button>
+      )}
     </div>
   );
 };

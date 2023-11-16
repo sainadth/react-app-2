@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
  * is not usual
  * In such cases we need add a cleanUp activity using return
  *
- * the return cleanup function will be triggerd when the component is unmounted
+ * the return cleanup function will be triggered when the component is unmounted
  */
 
 const RandomComponent = () => {

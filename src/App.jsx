@@ -14,6 +14,7 @@ import FormDataComponent from "./tutorial/useState/formData";
 import ToggleExample from "./tutorial/useState/customToggleHook";
 import CustomFetchHook from "./tutorial/useState/customFetchHook";
 import NavBar from "./tutorial/useState/navbar";
+import ReducerExample from "./tutorial/useState/resetUseReducer";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       {/* <FormDataComponent /> */}
       {/* <ToggleExample /> */}
       {/* <CustomFetchHook /> */}
-      <NavBar />
+      {/* <NavBar /> */}
+      <ReducerExample />
     </div>
   );
 }
